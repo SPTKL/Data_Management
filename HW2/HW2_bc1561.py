@@ -15,7 +15,7 @@ def cuisine_camis(pid, record):
 if __name__=='__main__':
     sc = SparkContext()
 
-    NYC_REST = sys.argv[1]
+    NYC_RESTAURANT = sys.argv[1]
 
     nyc_rest = sc.textFile(NYC_RESTAURANT, use_unicode=False).cache()
 
